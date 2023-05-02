@@ -13,12 +13,9 @@ def fun2():
     try:
         df = pd.read_excel('000001.xlsx')
     except:
-        continue
+        print('1')
     return 'Hello, Welcome to CloudBase_JSW, 2023-02-13!!!->2023.5.2\n'
 
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
-
-
-
