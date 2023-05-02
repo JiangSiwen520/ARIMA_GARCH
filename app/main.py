@@ -1,6 +1,9 @@
 from flask import Flask
 
-app = Flask(__name__)
+
+from test import route_test
+app = Flask(__name__)     #实例化一个Flask对象
+app.register_blueprint(route_test,url_prefix='/test')
 
 @app.route('/')
 def hello_world():
