@@ -1,7 +1,6 @@
 from flask import Flask
 
 
-import pandas as pd
 app = Flask(__name__)     #实例化一个Flask对象
 
 
