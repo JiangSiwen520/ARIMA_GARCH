@@ -1,4 +1,5 @@
 from flask import Flask
+import model
 
 app = Flask(__name__)
 
@@ -9,6 +10,7 @@ def hello_world():
 def fun2():
     return 'Hello, Welcome to CloudBase_JSW, 2023-02-13!!!->2023.5.2\n'
 
+app.register_blueprint(model.WHITE)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
