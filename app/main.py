@@ -10,10 +10,12 @@ def hello_world():
 @app.route('/new')
 def fun2():
     try:
+        q='1'
         df = pd.read_excel('000001.xlsx')
     except:
+        q='2'
         print('1')
-    return 'Hello, Welcome to CloudBase_JSW, 2023-02-13!!!->2023.5.2\n'
+    return 'Hello, Welcome to CloudBase_JSW, 2023-02-13!!!->2023.5.2'+q
 
 
 if __name__ == "__main__":
